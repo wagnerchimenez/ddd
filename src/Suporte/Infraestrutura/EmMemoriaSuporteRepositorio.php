@@ -16,6 +16,17 @@ class EmMemoriaSuporteRepositorio implements SuporteRepositorio
         $this->suportes = $suportes;
     }
 
+    public function buscarPorId(int $suporteId): ?Suporte
+    {
+        foreach ($this->suportes as $suporte) {
+            if ($suporte->id() === $suporteId) {
+                return $suporte;
+            }
+        }
+
+        return null;
+    }
+
     public function buscarPorCliente(int $clienteId): ?Suporte
     {
         foreach ($this->suportes as $suporte) {
@@ -29,6 +40,13 @@ class EmMemoriaSuporteRepositorio implements SuporteRepositorio
 
     public function salvar(Suporte $suporte): void
     {
+        foreach ($this->suportes as $chave => &$sup) {
+            if ($sup->id() === $suporte->id()) {
+                $sup = $suporte;
+                return;
+            }
+        }
+
         $this->suportes[] = $suporte;
     }
 }

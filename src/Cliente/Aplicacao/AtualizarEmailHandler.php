@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace SuporteInformatica\Cliente\Aplicacao;
 
 use SuporteInformatica\Cliente\Dominio\ClienteRepositorio;
-use SuporteInformatica\Cliente\Dominio\Email;
+use SuporteInformatica\Shared\Dominio\Email;
 use SuporteInformatica\Cliente\Dominio\Excecao\ClienteNaoEncontradoExcecao;
 
 class AtualizarEmailHandler

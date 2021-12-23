@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SuporteInformatica\Cliente\Dominio;
+namespace SuporteInformatica\Shared\Dominio;
 
-use SuporteInformatica\Cliente\Dominio\Excecao\CPFInvalidoExcecao;
+use SuporteInformatica\Shared\Dominio\Excecao\CPFInvalidoExcecao;
 
 class CPF
 {

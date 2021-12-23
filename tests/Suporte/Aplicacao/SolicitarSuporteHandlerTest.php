@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 use SuporteInformatica\Cliente\Dominio\Cliente;
-use SuporteInformatica\Cliente\Dominio\CPF;
-use SuporteInformatica\Cliente\Dominio\Email;
 use SuporteInformatica\Cliente\Infraestrutura\EmMemoriaClienteRepositorio;
+use SuporteInformatica\Shared\Dominio\CPF;
+use SuporteInformatica\Shared\Dominio\Email;
 use SuporteInformatica\Suporte\Aplicacao\SolicitarSuporte;
 use SuporteInformatica\Suporte\Aplicacao\SolicitarSuporteHandler;
 use SuporteInformatica\Suporte\Dominio\Suporte;

@@ -2,51 +2,45 @@
 
 declare(strict_types=1);
 
-namespace SuporteInformatica\Cliente\Dominio;
+namespace SuporteInformatica\Atendente\Dominio;
 
-use SuporteInformatica\Shared\Dominio\CPF;
 use SuporteInformatica\Shared\Dominio\Email;
 
-class Cliente
+class Atendente
 {
     private int $id;
     private string $nome;
     private Email $email;
-    private CPF $cpf;
+    private string $setor;
 
     private function __construct(
         int $id,
         string $nome,
         Email $email,
-        CPF $cpf
+        string $setor
     ) {
         $this->id = $id;
         $this->nome = $nome;
         $this->email = $email;
-        $this->cpf = $cpf;
+        $this->setor = $setor;
     }
 
     public static function criar(
         int $id,
         string $nome,
         Email $email,
-        CPF $cpf
+        string $setor
     ): self {
         return new self(
             $id,
             $nome,
             $email,
-            $cpf
+            $setor
         );
     }
 
     public function id(): int
     {
         return $this->id;
-    }
-
-    public function atualizarEmail(Email $email): void
-    {
-        $this->email = $email;
     }
 }

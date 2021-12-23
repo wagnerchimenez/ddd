@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SuporteInformatica\Cliente\Dominio\Excecao;
+namespace SuporteInformatica\Shared\Dominio\Excecao;
 
 use Exception;
 

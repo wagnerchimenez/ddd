@@ -8,8 +8,8 @@ use PHPUnit\Framework\TestCase;
 use SuporteInformatica\Cliente\Aplicacao\AtualizarEmail;
 use SuporteInformatica\Cliente\Aplicacao\AtualizarEmailHandler;
 use SuporteInformatica\Cliente\Dominio\Cliente;
-use SuporteInformatica\Cliente\Dominio\CPF;
-use SuporteInformatica\Cliente\Dominio\Email;
+use SuporteInformatica\Shared\Dominio\CPF;
+use SuporteInformatica\Shared\Dominio\Email;
 use SuporteInformatica\Cliente\Infraestrutura\EmMemoriaClienteRepositorio;
 
 class AtualizarEmailHandlerTest extends TestCase
